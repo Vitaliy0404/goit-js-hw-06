@@ -5,11 +5,11 @@ const refs = {
 
 refs.sizeText.style.fontSize = refs.controlInput.value + "px";
 
-const ResizingText = () => {
+const resizingText = () => {
     refs.sizeText.style.fontSize = `${refs.controlInput.value}px`;
 };
 
-refs.controlInput.addEventListener("input", ResizingText);
+refs.controlInput.addEventListener("input", resizingText);
 
 
 // Напиши скрипт, який реагує на зміну значення input#font-size-control (подія input) і змінює інлайн-стиль span#text, оновлюючи властивість font-size. В результаті, перетягуючи повзунок, буде змінюватися розмір тексту.
